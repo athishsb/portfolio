@@ -6,7 +6,7 @@ const IntroComponent = () => {
   const githubUrl = "https://github.com/athishsb";
   const linkedInUrl = "https://www.linkedin.com/in/athish-csf/";
   const resumeUrl =
-    "https://drive.google.com/file/d/1WNoAebiLewQh2lzNtjKbyuBRfrz_Lewv/view?usp=sharing";
+    "https://drive.google.com/file/d/1DonvMLZjBZQIwttincd6ic8EQljmlrpx/view?usp=sharing";
 
   const handleClick = (url) => {
     window.open(url, "_blank");

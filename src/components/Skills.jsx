@@ -45,10 +45,6 @@ const skillsData = [
     skills: [
       { name: "HTML", icon: <DiJavascript size={30} color="#E44D26" /> },
       { name: "CSS", icon: <FaCss3Alt size={30} color="#1572B6" /> },
-      {
-        name: "JavaScript",
-        icon: <TbBrandJavascript size={30} color="#F7DF1E" />,
-      },
       { name: "React", icon: <FaReact size={30} color="#61DBFB" /> },
       { name: "Redux", icon: <SiRedux size={30} color="#764ABC" /> },
     ],
@@ -107,7 +103,13 @@ const skillsData = [
   },
   {
     category: "Scripting Language",
-    skills: [{ name: "Python", icon: <FaPython size={30} color="#306998" /> }],
+    skills: [
+      {
+        name: "JavaScript",
+        icon: <TbBrandJavascript size={30} color="#F7DF1E" />,
+      },
+      { name: "Python", icon: <FaPython size={30} color="#306998" /> },
+    ],
   },
 ];
 
