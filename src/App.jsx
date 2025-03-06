@@ -1,24 +1,23 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Certificates from "./components/Certificates";
-import Divider from "./components/Divider";
-import IntroComponent from "./components/Intro";
+import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <>
-      <IntroComponent />
-      <Divider />
-      <Timeline />
-      <Divider />
-      <Skills />
-      <Divider />
-      <Projects />
-      <Divider />
-      <Certificates />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/certificates" element={<Certificates />} />
+      </Routes>
+    </Router>
   );
 }
 

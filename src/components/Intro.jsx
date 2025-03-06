@@ -6,7 +6,7 @@ const IntroComponent = () => {
   const githubUrl = "https://github.com/athishsb";
   const linkedInUrl = "https://www.linkedin.com/in/athish-sb/";
   const resumeUrl =
-    "https://drive.google.com/file/d/1gHlEnEWT9S2nImLD6OP8CbwD8vGyWe2c/view?usp=sharing";
+    "https://drive.google.com/file/d/1gHlEnEWT9S2nImLD6OP8CbwD8vGyWe2c/view";
 
   const handleClick = (url) => {
     window.open(url, "_blank");
@@ -14,7 +14,7 @@ const IntroComponent = () => {
 
   // Reusable class variables
   const buttonClass =
-    "btn btn-outline-light d-flex align-items-center gap-2 fw-bold px-3 py-2 shadow-sm";
+    "btn btn-outline-light d-flex align-items-center gap-2 fw-bold px-3 py-2 shadow-sm cursor-pointer";
   const motionHeading = {
     initial: { opacity: 0, y: -20 },
     animate: { opacity: 1, y: 0 },
@@ -68,6 +68,15 @@ const IntroComponent = () => {
           <BsBoxArrowUpRight /> Resume
         </button>
       </motion.div>
+
+      {/* Display email as plain text */}
+      <motion.p
+        {...motionDescription}
+        className="fw-bold text-light mb-3"
+        style={{ fontSize: "1.1rem" }}
+      >
+        📧 athishbalajisb22@gmail.com
+      </motion.p>
 
       <motion.p
         {...motionDescription}

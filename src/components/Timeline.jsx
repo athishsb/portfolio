@@ -6,7 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
-  // Reusable style variables
   const containerStyle = {
     background: "#121826",
     color: "#ffffff",
