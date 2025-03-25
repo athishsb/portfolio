@@ -116,217 +116,221 @@ const skillsData = [
 const Skills = () => {
   return (
     <div
-      className="text-center pt-4"
-      style={{ background: "#121826", color: "#ffffff" }}
+      style={{ background: "#121826", minHeight: "100vh", color: "#ffffff" }}
     >
-      <h1 className="mb-4 fw-bold text-info" style={{ fontSize: "2rem" }}>
-        Skills
-      </h1>
-      <div className="container">
-        <div className="row">
-          {/* Frontend, Cloud, and Tools in the same line */}
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Frontend Technologies</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[0].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
+      <div
+        className="text-center pt-4"
+        style={{ background: "#121826", color: "#ffffff" }}
+      >
+        <h1 className="mb-4 fw-bold text-info" style={{ fontSize: "2rem" }}>
+          Skills
+        </h1>
+        <div className="container">
+          <div className="row">
+            {/* Frontend, Cloud, and Tools in the same line */}
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Frontend Technologies</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[0].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
                     >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Cloud Services</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[1].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Tools</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[3].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Cloud Services</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[1].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
+          {/* New Row for Scripting Language, Databases, and Backend */}
+          <div className="row">
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Backend Technologies</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[2].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
                     >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Databases</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[4].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Scripting Language</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[7].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Tools</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[3].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
+          {/* Final Row for Operating System and CSS Frameworks */}
+          <div className="row">
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning"> CSS Frameworks</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[5].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
                     >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* New Row for Scripting Language, Databases, and Backend */}
-        <div className="row">
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Backend Technologies</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[2].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
+            <div className="col-md-4">
+              <div className="mb-4">
+                <h3 className="text-warning">Operating System</h3>
+                <div className="d-flex flex-wrap justify-content-center mt-3">
+                  {skillsData[6].skills.map((skill, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
                     >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Databases</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[4].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
-                    >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Scripting Language</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[7].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
-                    >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Final Row for Operating System and CSS Frameworks */}
-        <div className="row">
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning"> CSS Frameworks</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[5].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
-                    >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4">
-            <div className="mb-4">
-              <h3 className="text-warning">Operating System</h3>
-              <div className="d-flex flex-wrap justify-content-center mt-3">
-                {skillsData[6].skills.map((skill, i) => (
-                  <motion.div
-                    key={i}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card
-                      className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
-                      style={commonCardStyle}
-                    >
-                      {skill.icon}
-                      <p className="mt-2" style={commonTextStyle}>
-                        {skill.name}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
+                      <Card
+                        className="m-2 p-3 pb-1 d-flex flex-column align-items-center"
+                        style={commonCardStyle}
+                      >
+                        {skill.icon}
+                        <p className="mt-2" style={commonTextStyle}>
+                          {skill.name}
+                        </p>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
